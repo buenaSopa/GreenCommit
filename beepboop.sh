@@ -4,8 +4,6 @@
 #          Description: Make my github green again
 # ------------------------------------------------------------------
 
-. /.env
-
 SHA=$(curl https://api.github.com/repos/sapnu-puas/GreenCommit/contents/README.md | jq -r '.sha')
 #jq not download in heroku
 
@@ -17,6 +15,6 @@ fi
 curl \
   -X PUT \
   -H "Accept: application/vnd.github.v3+json" \
-  -H "Authorization: token $GITTOKEN" \
+  -H "Authorization: token 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" \
   https://api.github.com/repos/sapnu-puas/GreenCommit/contents/README.md \
-  -d "{\"message\":\"Wise man says only fool rush in\",\"committer\":{\"name\":\"McKidKneeKaneSir\",\"email\":\"$EMAIL\"},\"content\":\"TWNLaWRLbmVlS2FuZVNpcg==\",\"sha\":\"$SHA\"}"
+  -d "{\"message\":\"Wise man says only fool rush in\",\"committer\":{\"name\":\"McKidKneeKaneSir\",\"email\":\"bryankoh17102@gmail.com\"},\"content\":\"TWNLaWRLbmVlS2FuZVNpcg==\",\"sha\":\"$SHA\"}"
