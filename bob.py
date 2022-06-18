@@ -1,3 +1,3 @@
 import subprocess
 
-subprocess.call("beepboop.sh")
+subprocess.call("./beepboop.sh")
