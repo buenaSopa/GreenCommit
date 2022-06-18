@@ -1,8 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 # ------------------------------------------------------------------
 # [Bryan Kerr] GreenCommit
 #          Description: Make my github green again
 # ------------------------------------------------------------------
+
+. /.env
 
 SHA=$(curl https://api.github.com/repos/sapnu-puas/GreenCommit/contents/README.md | jq -r '.sha')
 #jq not download in heroku
