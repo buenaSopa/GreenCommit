@@ -21,4 +21,4 @@
 dates="$(date +'%d/%m/%Y')"
 time="$(date +'%T')"
 echo "#### Wise man says only fool rush in - McKidKneeKaneSir" > README.md
-echo "> Updated on ($dates) - $time (UTC) Time Zone" >> README.md
+echo "Updated on $dates - $time (UTC) Time Zone" >> README.md
