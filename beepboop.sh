@@ -18,6 +18,7 @@
 #   -H "Authorization: token $GITTOKEN" \
 #   https://api.github.com/repos/sapnu-puas/GreenCommit/contents/README.md \
 #   -d "{\"message\":\"Wise man says only fool rush in\",\"committer\":{\"name\":\"McKidKneeKaneSir\",\"email\":\"$EMAIL\"},\"content\":\"TWNLaWRLbmVlS2FuZVNpcg==\",\"sha\":\"$SHA\"}"
-rm README.md
+dates="$(date +'%d/%m/%Y')"
+time="$(date +'%T')"
 echo "#### Wise man says only fool rush in - McKidKneeKaneSir" > README.md
-echo " " >> README.md
+echo "> Updated on ($dates) - $time (UTC) Time Zone" >> README.md
